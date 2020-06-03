@@ -1,24 +1,24 @@
 # yevhenshuplat.github.io
-Looking for trainee or junior front-end developer position in Lviv
+Looking for trainee or junior front-end developer position in Lviv<br>
 
-English: Pre-intermediate
-Good communication skills
-Special attention to details and problem solving
-Ability to meet the deadlines and deliverables
+English: Pre-intermediate<br>
+Good communication skills<br>
+Special attention to details and problem solving<br>
+Ability to meet the deadlines and deliverables<br>
 <br>
-//Skills
-HTML5
-CSS3
-LESS/SCSS
-Bootstrap
-JavaScript
-Gulp
-Wordpress
+//Skills<br>
+HTML5<br>
+CSS3<br>
+LESS/SCSS<br>
+Bootstrap<br>
+JavaScript<br>
+Gulp<br><br>
+Wordpress<br>
 <br>
-//Experience
+//Experience<br>
 Freelancer (2019 - now)
 <br>
-//Education
-2019 developedbyed JS (courses)
-2018 Front-End Developer, SkillUP (courses)
-2016 Logos HTML/CSS (courses)
+//Education<br>
+2019 developedbyed JS (courses)<br>
+2018 Front-End Developer, SkillUP (courses)<br>
+2016 Logos HTML/CSS (courses)<br>
