@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GreenFarm</title>
+    <link rel="stylesheet" href="css/lightgallery.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.min.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+          <button class="hamburger hamburger-left">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <a href="#" class="logo">
+            <img src="images/logo.png" alt="" />
+          </a>
+          <nav class="menu">
+            <div class="nav-wrap">
+              <div class="cart-box">
+                <button class="cart">
+                  <svg width="25" height="25" class="cart">
+                    <use xlink:href="images/icons.svg#cart"></use>
+                  </svg>
+                  <span>2</span>
+                </button>
+              </div>
+              <form class="search-form" action="#">
+                <div class="search-wrap">
+                  <!-- <label for="search-input">Search</label> -->
+                  <input
+                    type="text"
+                    name="s"
+                    placeholder="Search"
+                    class="search-input"
+                  />
+                  <button class="search-submit" type="submit">
+                    <svg width="25" height="25" class="cart">
+                      <use xlink:href="images/icons.svg#search"></use>
+                    </svg>
+                  </button>
+                </div>
+              </form>
+              <ul>
+                <li>
+                  <a class="menu-link menu-link-active" href="#home">Home</a>
+                </li>
+                <li><a class="menu-link" href="#products">Products</a></li>
+                <li><a class="menu-link" href="#team">team</a></li>
+                <li>
+                  <a class="menu-link" href="#testimonials">Testimonials</a>
+                </li>
+                <li>
+                  <a class="menu-link" href="#gallery-section">Gallery</a>
+                </li>
+                <li><a class="menu-link" href="#contact-us">Contact us</a></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="header-buttons">
+            <button class="cart">
+              <svg width="25" height="25" class="cart">
+                <use xlink:href="images/icons.svg#cart"></use>
+              </svg>
+              <span>2</span>
+            </button>
+            <!-- <button class="search">
+              <svg width="25" height="25" class="header-search">
+                <use xlink:href="images/icons.svg#search"></use>
+              </svg>
+            </button> -->
+            <button class="hamburger hamburger-right">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+          <div class="sidebar">
+            <div class="sidebar-wrap">
+              <div class="sidebar-heading">
+                <h2>Get in Touch</h2>
+              </div>
+
+              <p>
+                We are always ready to provide you with fresh organic products
+                for your home or office. Contact us to find out how we can help
+                you.
+              </p>
+              <h3>Our Contacts</h3>
+              <div class="sidebar-img">
+                <img src="images/sidebar.jpg" alt="" />
+              </div>
+              <ul class="sidebar-contacts">
+                <li>
+                  <div class="contacts-item">
+                    <div class="contacts-icon">
+                      <svg width="20" height="20" class="contact-icon">
+                        <use xlink:href="images/icons.svg#phone"></use>
+                      </svg>
+                    </div>
+                    <a href="tel:+13239134688">+1 323-913-4688</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="contacts-item">
+                    <div class="contacts-icon">
+                      <svg width="20" height="20" class="contact-icon">
+                        <use xlink:href="images/icons.svg#navi"></use>
+                      </svg>
+                    </div>
+                    <a href="#"
+                      >4730 Crystal Springs Dr, Los Angeles, CA 90027</a
+                    >
+                  </div>
+                </li>
+                <li>
+                  <div class="contacts-item">
+                    <div class="contacts-icon">
+                      <svg width="20" height="20" class="contact-icon">
+                        <use xlink:href="images/icons.svg#mail"></use>
+                      </svg>
+                    </div>
+                    <a href="maito:mail@demolink.org">mail@demolink.org</a>
+                  </div>
+                </li>
+              </ul>
+              <ul class="sidebar-social">
+                <li>
+                  <div class="social-item">
+                    <div class="sidebar-icon"></div>
+                    <a href="#">
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="images/icons.svg#pinterest"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="social-item">
+                    <a href="#">
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="images/icons.svg#facebook"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="social-item">
+                    <a href="#">
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="images/icons.svg#instagram"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div class="social-item">
+                    <a href="#">
+                      <svg width="20" height="20" class="social-icon">
+                        <use xlink:href="images/icons.svg#twitter"></use>
+                      </svg>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="home" class="slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div
+            class="swiper-slide"
+            style="background-image: url('../images/slide-1.jpg');"
+          >
+            <div class="slider-cnt">
+              <div class="slider-content">
+                <h1 class="slider-title">Organic Food</h1>
+                <p class="slider-subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate voluptates ullam tempore reprehenderit adipisci
+                  alias.
+                </p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url('../images/slide-2.jpg');"
+          >
+            <div class="slider-cnt">
+              <div class="slider-content">
+                <h1 class="slider-title">Organic Food</h1>
+                <p class="slider-subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate voluptates ullam tempore reprehenderit adipisci
+                  alias.
+                </p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="swiper-slide"
+            style="background-image: url('../images/slide-3.jpg');"
+          >
+            <div class="slider-cnt">
+              <div class="slider-content">
+                <h1 class="slider-title">Organic Food</h1>
+                <p class="slider-subtitle">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Cupiditate voluptates ullam tempore reprehenderit adipisci
+                  alias.
+                </p>
+                <a href="#" class="read-more">Read more</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+    <section class="top-image">
+      <div class="container">
+        <div class="top-image__row">
+          <div class="top-image__col">
+            <div class="top-image__icon">
+              <img src="images/leaf.svg" alt="" />
+            </div>
+            <div class="top-image__text">
+              <h4>
+                <a href="#">
+                  Natural & Organic
+                </a>
+              </h4>
+            </div>
+          </div>
+          <div class="top-image__col">
+            <div class="top-image__icon">
+              <img src="images/shovel.svg" alt="" />
+            </div>
+            <div class="top-image__text">
+              <h4>
+                <a href="#">
+                  Best Equipment
+                </a>
+              </h4>
+            </div>
+          </div>
+          <div class="top-image__col">
+            <div class="top-image__icon">
+              <img src="images/sun.svg" alt="" />
+            </div>
+            <div class="top-image__text">
+              <h4>
+                <a href="#">
+                  Dedicated Team
+                </a>
+              </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="vegetables">
+      <div class="container">
+        <div class="vegetables__inner">
+          <div class="vegetables__banner">
+            <img src="images/product-banner.jpg" alt="" />
+            <div class="vegetables__banner-text">
+              <span>organic</span> vegetables
+            </div>
+          </div>
+          <div class="vegetables__items">
+            <div class="vegetables__item">
+              <div class="vegetables__item-img">
+                <img
+                  src="images/corn.png"
+                  alt="product"
+                  class="image"
+                  style="width: 100%;"
+                />
+                <div class="middle">
+                  <a href="#" class="vegetables__item-cart">Add to cart</a>
+                </div>
+              </div>
+              <div class="vegetables__item-body">
+                <h6 class="vegetables__item-title">
+                  <a href="#" class="vegetables__link">Corn</a>
+                </h6>
+                <div class="vegetables__item-price">
+                  <span class="old-price">$51.00</span>
+                  <span>$27.00</span>
+                </div>
+                <a href="#" class="vegetables__item-cart secontary-btn-cart"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+            <div class="vegetables__item">
+              <div class="vegetables__item-img">
+                <img
+                  src="images/avocado.png"
+                  alt="product"
+                  class="image"
+                  style="width: 100%;"
+                />
+                <div class="middle">
+                  <a href="#" class="vegetables__item-cart">Add to cart</a>
+                </div>
+              </div>
+              <div class="vegetables__item-body">
+                <h6 class="vegetables__item-title">
+                  <a href="#" class="vegetables__link">Avocados</a>
+                </h6>
+                <div class="vegetables__item-price">
+                  <span>$28.00</span>
+                </div>
+                <a href="#" class="vegetables__item-cart secontary-btn-cart"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+            <div class="vegetables__item">
+              <div class="vegetables__item-img">
+                <img
+                  src="images/broccoli.png"
+                  alt="product"
+                  class="image"
+                  style="width: 100%;"
+                />
+                <div class="middle">
+                  <a href="#" class="vegetables__item-cart">Add to cart</a>
+                </div>
+              </div>
+              <div class="vegetables__item-body">
+                <h6 class="vegetables__item-title">
+                  <a href="#" class="vegetables__link">Broccoli</a>
+                </h6>
+                <div class="vegetables__item-price">
+                  <span>$34.00</span>
+                </div>
+                <a href="#" class="vegetables__item-cart secontary-btn-cart"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+            <div class="vegetables__item">
+              <div class="vegetables__item-img">
+                <img
+                  src="images/artichokes.png"
+                  alt="product"
+                  class="image"
+                  style="width: 100%;"
+                />
+                <div class="middle">
+                  <a href="#" class="vegetables__item-cart">Add to cart</a>
+                </div>
+              </div>
+              <div class="vegetables__item-body">
+                <h6 class="vegetables__item-title">
+                  <a href="#" class="vegetables__link">Artichokes</a>
+                </h6>
+                <div class="vegetables__item-price">
+                  <span>$23.00</span>
+                </div>
+                <a href="#" class="vegetables__item-cart secontary-btn-cart"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="our-approach">
+      <div class="our-approach__inner">
+        <h2>Our Approach</h2>
+        <p>
+          Our farm strictly combines the traditions of organic farming with the
+          latest innovations to make our products healthy and safe for the
+          clients.
+        </p>
+        <a href="#">View presentation</a>
+      </div>
+    </section>
+    <section id="products" class="fruits">
+      <div class="container">
+        <div class="fruits__inner">
+          <div class="fruits__banner">
+            <img src="images/product-banner2.jpg" alt="" />
+            <div class="fruits__banner-text"><span>fresh</span> fruits</div>
+          </div>
+          <div class="fruits__items">
+            <div class="fruits__item">
+              <div class="fruits__item-img">
+                <img
+                  src="images/peaches.png"
+                  alt="product"
+                  class="image"
+                  style="width: 100%;"
+                />
+                <div class="middle">
+                  <a href="#" class="fruits__item-cart">Add to cart</a>
+                </div>
+              </div>
+              <div class="fruits__item-body">
+                <h6 class="fruits__item-title">
+                  <a href="#" class="fruits__link">Peaches</a>
+                </h6>
+                <div class="fruits__item-price">
+                  <span class="old-price">$59.00</span>
+                  <span>$28.00</span>
+                </div>
+                <a href="#" class="fruits__item-cart secontary-btn-cart"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+            <div class="fruits__item">
+              <div class="fruits__item-img">
+                <img
+                  src="images/apples.png"
+                  alt="product"
+                  class="image"
+                  style="width: 100%;"
+                />
+                <div class="middle">
+                  <a href="#" class="fruits__item-cart">Add to cart</a>
+                </div>
+              </div>
+              <div class="fruits__item-body">
+                <h6 class="fruits__item-title">
+                  <a href="#" class="fruits__link">Apples</a>
+                </h6>
+                <div class="fruits__item-price">
+                  <span>$21.00</span>
+                </div>
+                <a href="#" class="fruits__item-cart secontary-btn-cart"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+            <div class="fruits__item">
+              <div class="fruits__item-img">
+                <img
+                  src="images/kiwis.png"
+                  alt="product"
+                  class="image"
+                  style="width: 100%;"
+                />
+                <div class="middle">
+                  <a href="#" class="fruits__item-cart">Add to cart</a>
+                </div>
+              </div>
+              <div class="fruits__item-body">
+                <h6 class="fruits__item-title">
+                  <a href="#" class="fruits__link">Kiwis</a>
+                </h6>
+                <div class="fruits__item-price">
+                  <span>$26.00</span>
+                </div>
+                <a href="#" class="fruits__item-cart secontary-btn-cart"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+            <div class="fruits__item">
+              <div class="fruits__item-img">
+                <img
+                  src="images/bluberries.png"
+                  alt="product"
+                  class="image"
+                  style="width: 100%;"
+                />
+                <div class="middle">
+                  <a href="#" class="fruits__item-cart">Add to cart</a>
+                </div>
+              </div>
+              <div class="fruits__item-body">
+                <h6 class="fruits__item-title">
+                  <a href="#" class="fruits__link">Blueberries</a>
+                </h6>
+                <div class="fruits__item-price">
+                  <span>$23.00</span>
+                </div>
+                <a href="#" class="fruits__item-cart secontary-btn-cart"
+                  >Add to cart</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="statistics">
+      <div class="container">
+        <div class="statistics__inner">
+          <div class="statistics__item">
+            <div class="statistics__item-counter">
+              <span class="statistics__item-number">12</span>
+              <span class="statistics__item-icon">
+                <svg width="40" height="40" class="statistics-icon">
+                  <use xlink:href="images/icons.svg#trophy"></use>
+                </svg>
+              </span>
+            </div>
+            <h6>Awards</h6>
+          </div>
+          <div class="statistics__item">
+            <div class="statistics__item-counter">
+              <span class="statistics__item-number">2k</span>
+              <span class="statistics__item-icon">
+                <svg width="40" height="40" class="statistics-icon">
+                  <use xlink:href="images/icons.svg#store"></use>
+                </svg>
+              </span>
+            </div>
+            <h6>Products</h6>
+          </div>
+          <div class="statistics__item">
+            <div class="statistics__item-counter">
+              <span class="statistics__item-number">679</span>
+              <span class="statistics__item-icon">
+                <svg width="40" height="40" class="statistics-icon">
+                  <use xlink:href="images/icons.svg#like-heart"></use>
+                </svg>
+              </span>
+            </div>
+            <h6>Happy Clients</h6>
+          </div>
+          <div class="statistics__item">
+            <div class="statistics__item-counter">
+              <span class="statistics__item-number">13</span>
+              <span class="statistics__item-icon">
+                <svg width="40" height="40" class="statistics-icon">
+                  <use xlink:href="images/icons.svg#farmer"></use>
+                </svg>
+              </span>
+            </div>
+            <h6>Farmers</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="team">
+      <div class="container">
+        <div class="team__heading heading">
+          <h2>Our Team</h2>
+        </div>
+        <div class="team__row">
+          <div class="team__col">
+            <article class="team__card">
+              <a href="#" class="team__person">
+                <img src="images/team1.jpg" alt="" />
+              </a>
+              <div class="team__desc">
+                <a href="#">Raul Sanchez</a>
+                <span>Founder</span>
+              </div>
+            </article>
+          </div>
+          <div class="team__col">
+            <article class="team__card">
+              <a href="#" class="team__person">
+                <img src="images/team2.jpg" alt="" />
+              </a>
+              <div class="team__desc">
+                <a href="#">Deisy Obrian</a>
+                <span>Garden Manager</span>
+              </div>
+            </article>
+          </div>
+          <div class="team__col">
+            <article class="team__card">
+              <a href="#" class="team__person">
+                <img src="images/team3.jpg" alt="" />
+              </a>
+              <div class="team__desc">
+                <a href="#">Sam Robinson</a>
+                <span>Farmyard Coordinator</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="quotes">
+      <div class="container">
+        <div class="quotes__heading heading">
+          <h2>What People Say</h2>
+        </div>
+        <div class="quotes__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="quote">
+                <div class="quote__body">
+                  <div class="quote__figure">
+                    <a href="#"><img src="images/user1.jpg" alt="" /></a>
+                  </div>
+                  <div class="quote__text">
+                    <p>
+                      The food from your farm is wonderful. So many nights when
+                      we sit down to dinner we can say everything on this plate
+                      is locally grown and delicious. Thank you!
+                    </p>
+                  </div>
+                  <h5 class="quote__cite">
+                    <a href="#">Kate Anderson</a>
+                  </h5>
+                  <p class="quote__status">Regular Client</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="quote">
+                <div class="quote__body">
+                  <div class="quote__figure">
+                    <a href="#"><img src="images/user2.jpg" alt="" /></a>
+                  </div>
+                  <div class="quote__text">
+                    <p>
+                      I picked up a head of your lettuce at a local grocery
+                      store today. What an amazing and beautiful lettuce it is!
+                      I’ve never seen another so full and green and tempting.
+                    </p>
+                  </div>
+                  <h5 class="quote__cite">
+                    <a href="#">Samantha Peterson</a>
+                  </h5>
+                  <p class="quote__status">Regular Client</p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="quote">
+                <div class="quote__body">
+                  <div class="quote__figure">
+                    <a href="#"><img src="images/user3.jpg" alt="" /></a>
+                  </div>
+                  <div class="quote__text">
+                    <p>
+                      I wanted to tell you how amazing it was to see the farm
+                      and how much we love the food. Your apples and carrots are
+                      just wonderful and their taste is great.
+                    </p>
+                  </div>
+                  <h5 class="quote__cite">
+                    <a href="#">Kate Anderson</a>
+                  </h5>
+                  <p class="quote__status">John Wilson</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination swiper-pagination-white"></div>
+        </div>
+      </div>
+    </section>
+    <section id="gallery-section" class="gallery">
+      <div class="container">
+        <h2 class="gallery__heading heading">Our Gallery</h2>
+        <div id="gallery" class="gallery__box">
+          <a href="images/gallery-original-1-1200x800.jpg">
+            <img src="images/grid-gallery-1-370x303.jpg" />
+          </a>
+
+          <a href="images/gallery-original-2-1200x800.jpg">
+            <img src="images/grid-gallery-2-370x303.jpg" />
+          </a>
+
+          <a href="images/gallery-original-3-800x1200.jpg">
+            <img src="images/grid-gallery-3-370x303.jpg" />
+          </a>
+
+          <a href="images/gallery-original-4-800x1200.jpg">
+            <img src="images/grid-gallery-4-370x303.jpg" />
+          </a>
+
+          <a href="images/gallery-original-5-800x1200.jpg">
+            <img src="images/grid-gallery-5-370x303.jpg" />
+          </a>
+
+          <a href="images/gallery-original-6-1200x800.jpg">
+            <img src="images/grid-gallery-6-370x303.jpg" />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="container">
+        <h2 class="partners__heading heading">Our Partners</h2>
+        <div class="partners__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide partners__item">
+              <a class="partners__link" href="#">
+                <img src="images/clients-1-270x145.png" alt="partner-image" />
+              </a>
+            </div>
+            <div class="swiper-slide partners__item">
+              <a class="partners__link" href="#">
+                <img src="images/clients-2-270x145.png" alt="partner-image" />
+              </a>
+            </div>
+            <div class="swiper-slide partners__item">
+              <a class="partners__link" href="#">
+                <img src="images/clients-3-270x145.png" alt="partner-image" />
+              </a>
+            </div>
+            <div class="swiper-slide partners__item">
+              <a class="partners__link" href="#">
+                <img src="images/clients-4-270x145.png" alt="partner-image" />
+              </a>
+            </div>
+            <div class="swiper-slide partners__item">
+              <a class="partners__link" href="#">
+                <img src="images/clients-1-270x145.png" alt="partner-image" />
+              </a>
+            </div>
+            <div class="swiper-slide partners__item">
+              <a class="partners__link" href="#">
+                <img src="images/clients-2-270x145.png" alt="partner-image" />
+              </a>
+            </div>
+            <div class="swiper-slide partners__item">
+              <a class="partners__link" href="#">
+                <img src="images/clients-3-270x145.png" alt="partner-image" />
+              </a>
+            </div>
+            <div class="swiper-slide partners__item">
+              <a class="partners__link" href="#">
+                <img src="images/clients-4-270x145.png" alt="partner-image" />
+              </a>
+            </div>
+          </div>
+          <div class="swiper-pagination partners__pagination"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact-us" class="contact-us">
+      <div class="container">
+        <h2 class="contact-us__heading heading">Get in Touch</h2>
+        <div class="contact-us__row">
+          <div class="contact-us__col">
+            <img src="images/vegetables.png" alt="vegetables" />
+          </div>
+          <div class="contact-us__col">
+            <form action="#" class="contact-us__form">
+              <div class="contact-us__form-inner">
+                <div class="contact-us-first-last">
+                  <div class="contact-us__first">
+                    <input type="textbox" id="username" required />
+                    <label for="username">First Name</label>
+                  </div>
+                  <div class="contact-us__last">
+                    <input type="textbox" id="lastname" required />
+                    <label for="lastname">Last Name</label>
+                  </div>
+                </div>
+                <div class="contact-us__mail">
+                  <input type="email" id="email" required />
+                  <label for="email">E-Mail</label>
+                </div>
+                <div class="contact-us__message">
+                  <textarea
+                    name="textarea"
+                    id="textarea"
+                    class="textarea"
+                    required
+                  ></textarea>
+                  <label for="textarea">Message</label>
+                </div>
+                <div class="contact-us__button">
+                  <button type="submit">SEND</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__content">
+            <div class="footer__col">
+              <a href="#" class="footer__logo">
+                <img src="images/logo-inverse-151x35.png" alt="" />
+              </a>
+              <p class="footer__text">
+                GreenFarm is an organic farm located in California. We offer
+                healthy foods and products to our clients.
+              </p>
+              <ul class="footer__contacts">
+                <li>
+                  <div class="contacts-item">
+                    <div class="contacts-icon phone-icon">
+                      <svg width="20" height="20" class="contact-icon">
+                        <use xlink:href="images/icons.svg#phone"></use>
+                      </svg>
+                    </div>
+                    <a href="tel:+13239134688">+1 323-913-4688</a>
+                  </div>
+                </li>
+                <li>
+                  <div class="contacts-item">
+                    <div class="contacts-icon">
+                      <svg width="20" height="20" class="contact-icon">
+                        <use xlink:href="images/icons.svg#clock"></use>
+                      </svg>
+                    </div>
+                    Mon-Sat: 07:00AM - 05:00PM
+                  </div>
+                </li>
+                <li>
+                  <div class="contacts-item">
+                    <div class="contacts-icon">
+                      <svg width="20" height="20" class="contact-icon">
+                        <use xlink:href="images/icons.svg#navi"></use>
+                      </svg>
+                    </div>
+                    <a href="#"
+                      >4730 Crystal Springs Dr, Los Angeles, CA 90027</a
+                    >
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__col">
+              <div class="footer__subscribe">
+                <h5>Newsletter</h5>
+                <p class="footer__text">
+                  Join our email newsletter for news and tips.
+                </p>
+                <div class="footer__form">
+                  <form action="#">
+                    <div class="footer__input">
+                      <input
+                        type="email"
+                        name="footer-email"
+                        id="footer-email"
+                        required
+                      />
+                      <label for="footer-email">Enter Your E-Mail</label>
+                    </div>
+                    <div class="footer__button">
+                      <button type="submit">Subscribe</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="footer__social">
+                <p>Follow Us</p>
+                <div>
+                  <ul class="footer__social-menu">
+                    <li>
+                      <div class="social-item">
+                        <div class="sidebar-icon"></div>
+                        <a href="#">
+                          <svg width="20" height="20" class="social-icon">
+                            <use xlink:href="images/icons.svg#pinterest"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="social-item">
+                        <a href="#">
+                          <svg width="20" height="20" class="social-icon">
+                            <use xlink:href="images/icons.svg#facebook"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="social-item">
+                        <a href="#">
+                          <svg width="20" height="20" class="social-icon">
+                            <use xlink:href="images/icons.svg#instagram"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="social-item">
+                        <a href="#">
+                          <svg width="20" height="20" class="social-icon">
+                            <use xlink:href="images/icons.svg#twitter"></use>
+                          </svg>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="footer__col">
+              <h5>Gallery</h5>
+              <div id="footer-gallery" class="footer__gallery">
+                <a href="images/gallery-original-1-1200x800.jpg">
+                  <img src="images/grid-gallery-1-370x303.jpg" />
+                </a>
+
+                <a href="images/gallery-original-2-1200x800.jpg">
+                  <img src="images/grid-gallery-2-370x303.jpg" />
+                </a>
+
+                <a href="images/gallery-original-3-800x1200.jpg">
+                  <img src="images/grid-gallery-3-370x303.jpg" />
+                </a>
+
+                <a href="images/gallery-original-4-800x1200.jpg">
+                  <img src="images/grid-gallery-4-370x303.jpg" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copy">
+        <div class="container">
+          <p>© 2020 GreenFarm. All rights reserved</p>
+        </div>
+      </div>
+    </footer>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">
+      <svg width="20" height="20" class="to-top-icon">
+        <use xlink:href="images/icons.svg#arrow-up"></use>
+      </svg>
+    </button>
+
+    <script src="js/lightgallery.min.js"></script>
+    <script src="js/lg-thumbnail.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
