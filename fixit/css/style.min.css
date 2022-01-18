@@ -5,9 +5,7 @@
 #contact-us {
     overflow: hidden;
 }
-#reviews {
-.swiper-button-next,
-.swiper-button-prev {
+#reviews .swiper-button-prev,
+#reviews .swiper-button-next {
     display: none;
-    }
 }
