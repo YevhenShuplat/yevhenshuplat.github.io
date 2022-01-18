@@ -619,3 +619,6 @@ body {
      border-image: initial;
   overflow: hidden;
 }
+.exp {
+  margin-bottom: 10px;
+}
