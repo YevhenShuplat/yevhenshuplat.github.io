@@ -250,13 +250,14 @@ body {
 }
 
 .about-me__title, .about-me__text {
-  font-size: 30px;
-  text-align: center;
-  margin-bottom: 60px;
+  font-size: 16px;
+  text-align: left;
+  margin-bottom: 30px;
+  line-height: 30px;
 }
 
 .about-me__text {
-  font-size: 20px;
+  font-size: 16px;
 }
 
 .home__links {
@@ -326,6 +327,7 @@ body {
 
 .about li {
   padding: 10px;
+  padding-left: 0;
 }
 
 .tabs {
