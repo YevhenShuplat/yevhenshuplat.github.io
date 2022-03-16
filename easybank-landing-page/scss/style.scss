@@ -1,0 +1,453 @@
+@import "../../node_modules/normalize.css/normalize";
+
+/*my css*/
+:root {
+    //Primary
+    --DarkBlue: hsl(233, 26%, 24%);
+    --LimeGreen: hsl(136, 65%, 51%);
+    --BrightCyan: hsl(192, 70%, 51%);
+    --gradient: linear-gradient(90deg, rgba(50, 209, 102, 1) 0%, rgba(42, 184, 212, 1) 100%);
+
+    // Neutral
+
+    --GrayishBlue: hsl(233, 8%, 62%);
+    --LightGrayishBlue: hsl(220, 16%, 96%);
+    --VeryLightGray: hsl(0, 0%, 98%);
+    --White: hsl(0, 0%, 100%);
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.5s all;
+    color: var(--GrayishBlue);
+}
+
+// .navLink:hover {
+//     padding-bottom: 26px;
+//     border-bottom: 4px solid transparent;
+//     border-image: linear-gradient(to right, var(--LimeGreen), var(--BrightCyan));
+//     border-image-slice: 1;
+// }
+.navLink {
+    position: relative;
+    transition: 0.5s all;
+}
+
+
+
+.navLink:hover::before {
+    transition: 0.5s all;
+    position: absolute;
+    top: 47px;
+    left: 0;
+    content: '';
+
+    width: 100%;
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(to right, var(--LimeGreen), var(--BrightCyan));
+    border-image-slice: 1;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: "Public Sans", sans-serif;
+    font-size: 18px;
+    color: var(--GrayishBlue);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-size: 46px;
+    font-weight: 300;
+    color: var(--DarkBlue);
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h3 {
+    margin: 0;
+    padding: 80px 0px 40px 0;
+    font-size: 36px;
+}
+
+h4 {
+    font-size: 20px;
+}
+
+p {
+    line-height: 30px;
+}
+
+.flex {
+    display: flex;
+}
+
+.wrapper {
+    margin: 0 auto;
+    overflow: hidden;
+    max-width: 1440px;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    max-width: 1300px;
+}
+
+.header {
+    background: url(../images/bg-intro-desktop.svg) no-repeat;
+    background-position-x: 640px;
+    background-position-y: -150px;
+    background-color: var(--VeryLightGray);
+}
+
+.header-top {
+    position: fixed;
+    background-color: #fff;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    margin: 0 auto;
+    z-index: 10;
+
+    .cnt {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        max-width: 1300px;
+        padding: 0 15px;
+    }
+
+    nav {
+        width: 45%;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+.left-side {
+    width: 50%;
+    padding: 230px 0;
+}
+
+.right-side {
+    width: 50%;
+
+    img {
+        transform: translate(60px, -40px);
+    }
+}
+
+.heading {
+    max-width: 450px;
+
+    h1 {
+        font-size: 46px;
+    }
+
+    p {
+        padding: 25px 0px;
+    }
+}
+
+.btn {
+    outline: 0;
+    border: 0;
+    background: linear-gradient(90deg, rgba(50, 209, 102, 1) 0%, rgba(42, 184, 212, 1) 100%);
+    border-radius: 30px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.5s;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.header-top .hamburger {
+    display: none;
+    align-items: center;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+
+    div {
+        transition: all 0.5s;
+        width: 24px;
+        height: 2px;
+        background-color: #000;
+
+        &::before,
+        &::after {
+            content: "";
+            transition: all 0.5s;
+            left: 0;
+            position: absolute;
+            width: 24px;
+            height: 2px;
+            background-color: #000;
+        }
+
+        &::before {
+            top: 2px;
+        }
+
+        &::after {
+            top: 20px;
+        }
+    }
+}
+
+//animation
+.header-top .toggle {
+    div::before {
+        transform: rotate(-45deg) translate(-7px, 6px);
+        opacity: 1;
+    }
+
+    div {
+        transition: all 0.5s;
+        background: transparent;
+    }
+
+    div::after {
+        transform: rotate(45deg) translate(-6px, -6px);
+        opacity: 1;
+    }
+}
+
+
+.choose {
+    margin-top: -180px;
+    background-color: var(--LightGrayishBlue);
+
+    .heading_box {
+        padding: 50px 0;
+
+        p {
+            max-width: 640px;
+        }
+    }
+
+    .cards {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .card {
+            padding-top: 32px;
+            max-width: 24%;
+
+            p {
+                line-height: 26px;
+            }
+        }
+    }
+}
+
+.latest-articles {
+    background-color: var(--VeryLightGray);
+}
+
+.articles {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-bottom: 100px;
+
+
+    .article {
+        display: flex;
+        flex-direction: column;
+        padding-top: 32px;
+        max-width: 24%;
+        justify-content: left;
+        text-align: left;
+
+        p {
+            line-height: 26px;
+            font-size: 16px;
+        }
+
+        .article-link {
+            a {
+                color: var(--DarkBlue);
+
+                &:hover {
+                    color: var(--LimeGreen);
+                }
+            }
+        }
+
+        span {
+            display: block;
+            padding: 115px;
+            background-size: cover;
+            background-position: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .article-box {
+            text-align: left;
+            padding: 20px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: white;
+
+            div:first-child {
+                font-size: 12px;
+                padding-bottom: 10px;
+            }
+        }
+    }
+}
+
+.article:nth-child(1) span {
+    background-image: url(../images/image-currency.jpg);
+}
+
+.article:nth-child(2) span {
+    background-image: url(../images/image-restaurant.jpg);
+}
+
+.article:nth-child(3) span {
+    background-image: url(../images/image-plane.jpg);
+}
+
+.article:nth-child(4) span {
+    background-image: url(../images/image-confetti.jpg);
+}
+
+.footer {
+    background-color: var(--DarkBlue);
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .social_logo {
+        display: flex;
+        width: 250px;
+        flex-direction: column;
+
+        .social {
+            width: 80%;
+
+            svg path {
+                transition: all 0.5s;
+            }
+
+            svg:hover path {
+                fill: var(--LimeGreen);
+            }
+        }
+
+        .logo {
+            padding: 30px 0;
+
+        }
+
+        .social-menu {
+            display: flex;
+            padding: 0;
+            justify-content: space-between;
+        }
+    }
+
+    .footer-nav {
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 0;
+            height: 100px;
+
+            a {
+                color: #fff;
+
+                &:hover {
+                    color: var(--LimeGreen);
+                }
+            }
+        }
+    }
+
+    .footer-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        .btn {
+            margin-bottom: 20px;
+        }
+
+        span {
+            font-size: 14px;
+        }
+    }
+}
+
+.challenge {
+    font-size: 16px;
+    text-align: center;
+    background-color: var(--VeryLightGray);
+
+    a {
+        color: var(--DarkBlue);
+
+        &:hover {
+            color: var(--LimeGreen);
+        }
+    }
+}
+
+.zero {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    clip: rect(1px, 1px, 1px, 1px);
+    height: 1px;
+    width: 1px;
+    padding: 0px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    overflow: hidden
+}
+
+@import "./media.scss";

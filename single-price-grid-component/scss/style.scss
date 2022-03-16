@@ -1,0 +1,160 @@
+@import "../../node_modules/normalize.css/normalize";
+
+/*my css*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(204, 43%, 93%);
+  max-width: 1440px;
+  height: 96vh;
+  margin: 0 auto;
+}
+
+.content {
+  max-width: 700px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-shadow: 2px 3px 20px 4px #00000036;
+}
+
+.our-community {
+  padding: 30px;
+  background-color: #fff;
+
+  h1 {
+    color: hsl(179, 62%, 43%);
+  }
+
+  h2 {
+    color: hsl(71, 73%, 54%);
+  }
+
+  p {
+    color: hsl(218, 22%, 67%);
+    max-width: 585px;
+  }
+}
+
+.info-column {
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  background-color: #2ab2af;
+
+  .column__cta {
+    padding: 30px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    b {
+      font-size: 30px;
+    }
+
+    span {
+      padding-bottom: 20px;
+    }
+
+    button {
+      padding: 10px;
+      background-color: #c0d830;
+      border: none;
+      outline: none;
+      color: #fff;
+      font-size: 20px;
+      font-weight: 700;
+      border-radius: 4px;
+      box-shadow: 0px 4px 16px 0px #00000050;
+      cursor: pointer;
+      transition: all .2s ease-out;
+    }
+  }
+
+  .column {
+    background-color: #5ac6c7;
+    padding: 30px;
+    width: 50%;
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+
+@media (max-width: 700px) {
+  .content {
+    margin: auto 30px;
+  }
+
+  .container {
+    margin: 20px auto;
+    height: unset;
+  }
+
+  .info-column {
+    flex-direction: column;
+
+    .column__cta,
+    .column {
+      width: 100%;
+    }
+  }
+}
+
+
+@media (max-width: 450px) {
+  .content {
+    margin: auto 15px;
+  }
+
+  .container {
+
+    h1 {
+      font-size: 25px;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    p {
+      font-size: 14px;
+    }
+  }
+
+  footer {
+    margin-top: 30px;
+  }
+}

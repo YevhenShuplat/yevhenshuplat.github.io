@@ -1,0 +1,147 @@
+@import "../../node_modules/normalize.css/normalize";
+
+/*my css*/
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Poppins", sans-serif;
+  background-color: hsl(0, 0%, 98%);
+  color: hsl(229, 6%, 66%);
+}
+
+h1 {
+  font-size: 34px;
+}
+
+h3 {
+  margin: 0;
+}
+
+.heading-box {
+  max-width: 500px;
+  color: hsl(234, 12%, 34%);
+  text-align: center;
+  margin: 40px 0;
+
+  p {
+    color: hsl(229, 6%, 66%);
+    line-height: 24px;
+  }
+
+  .heading {
+    font-weight: 200;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.columns {
+  display: flex;
+  width: 100%;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  display: block;
+  .column:nth-child(1) {
+    border-color: hsl(0, 78%, 62%);
+  }
+  .column:nth-child(2) {
+    border-color: hsl(34, 97%, 64%);
+  }
+}
+.column {
+  max-width: 340px;
+  padding: 30px;
+  margin: 25px;
+  background-color: #fff;
+  border-top: 8px solid black;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 2px 3px 20px 4px #00000036;
+  transition: 0.5s all;
+  cursor: pointer;
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  .img {
+    display: flex;
+    margin-top: 30px;
+    justify-content: flex-end;
+  }
+
+  h3 {
+    color: hsl(234, 12%, 34%);
+  }
+
+  p {
+    font-weight: 200;
+  }
+}
+
+.column:first-child {
+  border-color: hsl(180, 62%, 55%);
+}
+.column:nth-child(3) {
+  border-color: hsl(212, 86%, 64%);
+}
+
+@media (max-width: 1187px) {
+  .column {
+    padding: 20px;
+    margin: 10px;
+  }
+}
+@media (max-width: 1079px) {
+  .center {
+    display: flex;
+  }
+}
+
+@media (max-width: 767px) {
+  .columns,
+  .center {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 430px) {
+  .column:hover {
+    transform: scale(1);
+  }
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 12px;
+  }
+}
